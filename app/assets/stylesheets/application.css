@@ -1,13 +1,76 @@
-/*
- * This is a manifest file that'll be compiled into application.css, which will include all the files
- * listed below.
- *
- * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
- * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
- *
- * You're free to add application-wide styles to this file and they'll appear at the top of the
- * compiled file, but it's generally better to create a new file per style scope.
- *
- *= require_self
- *= require_tree .
- */
+@import url(http://fonts.googleapis.com/css?family=Exo:600);
+
+body
+{
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-image: url('../assets/gordon_gekko1.jpg');
+  background-repeat: no-repeat;
+  background-position: center center fixed;
+  background-size: cover;
+}
+
+#main
+{
+  opacity: .9;
+  background-color: #EAE6C1;
+  margin-left: 30%;
+  margin-right: 30%;
+  padding: 20px;
+  text-align: center;
+  font-family: 'Exo', sans-serif;
+  font-size: 20px;
+  border-bottom-right-radius: 25px;
+  border-bottom-left-radius: 25px;
+}
+
+h1
+{
+  font-family: 'Exo', sans-serif;
+  font-size: 22px;
+  color: #000;
+}
+
+input[type="text"]
+{
+  height: 30px;
+  width: 200px;
+  font-family: 'Exo', sans-serif;
+  font-size: 16px;
+  margin: 15px;
+}
+
+#button
+{
+-moz-box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+-webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+-moz-border-radius: 5px;
+-webkit-border-radius: 5px;
+text-shadow: 0 -1px 1px rgba(0,0,0,0.25);
+border-bottom: 1px solid rgba(0,0,0,0.25);
+padding: 8px 14px 9px;
+background: #222 url(/images/alert-overlay.png) repeat-x;
+display: inline-block;
+color: #fff;
+text-decoration: none;
+font-weight: bold;
+line-height: 1;
+position: relative;
+cursor: pointer;
+font-family: 'Exo', sans-serif;
+font-size: 18px;
+}
+
+.stock
+{
+  opacity: .8;
+  background-color: #33BA2E;
+  border: 1px solid #757575;
+  border-radius: 10px;
+  padding: 25px;
+  margin: 25px;
+  width: 500px;
+  height: 200px;
+  float: left;
+}
