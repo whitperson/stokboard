@@ -1,9 +1,13 @@
 
 <div id="main">
 <h1>STOKBOARD</h1>
-
+<p>Stokboard is a simple Rails app that retrives real-time stock quotes and creates dynamic graphs for each stock on a timed inerval. Since it's real-time, it works best when the stock marker is open. Enter a stock quote to test it out...
+</p>
 <%= text_field_tag 'symbol' %>
-<%= button_tag 'Add Symbol', :id => 'button' %>
+<%= button_tag 'Add a Stock Symbol', :class => 'button' %>
+<%= button_to 'Refresh Stock Database', {:controller => :stocks, :action => :delete}, :class => 'button' %>
 </div>
 
 <div id="stocks"></div>
+
+

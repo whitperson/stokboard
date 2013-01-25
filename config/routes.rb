@@ -3,6 +3,7 @@ Stokboard::Application.routes.draw do
   root :to => 'stocks#index'
   post '/stocks' => 'stocks#create'
   get '/stocks' => 'stocks#dashboard'
+  match '/delete' => 'stocks#delete'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
