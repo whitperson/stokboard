@@ -1,7 +1,7 @@
 $(function(){
 
   $('button').click(add_stock);
-  setInterval(run_dashboard, 1000);
+  setInterval(run_dashboard, 2000);
 
 });
 
